@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
+</head>
+
+<body>
+    <button class="back-button" onclick="window.location.href='index.html'">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 12H5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+    </button>
+
+    <div class="internal-elevator-frame">
+        <div class="position-indicator">
+            <div class="floor">T</div>
+            <!-- <img src="assets/imgs/icons/down_arrow.png" alt="Arrow Position Indicator" class="arrow-position-indicator"> -->
+            <svg class="arrow-position-indicator" height="26px" width="26px" version="1.1" id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 155.139 155.139" xml:space="preserve">
+                <g>
+                    <g>
+                        <polygon class="arrow-position-indicator-light arrow-light-off" points="155.139,77.566 79.18,1.596 79.18,45.978 0,45.978 0,109.155 79.18,109.155 79.18,153.542 
+                           " />
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <div class="door-frame-wrapper">
+            <div class="door-frame">
+                <div class="interior"></div>
+                <div class="door-part1 door-open"></div>
+                <div class="door-part2 door-open"></div>
+                <div class="door-bottom"></div>
+            </div>
+            <div class="button-section">
+                <button class="btn-floor-3" onclick="changeFloor(3)">3</button>
+                <button class="btn-floor-2" onclick="changeFloor(2)">2</button>
+                <button class="btn-floor-1" onclick="changeFloor(1)">1</button>
+                <button class="btn-floor-0" onclick="changeFloor(0)">T</button>
+                <!-- <button class="elevator-open-door-btn" onclick="openCloseDoors()">
+                    <img src="assets/imgs/icons/elevator-open-door-icon.svg" alt="Elevator Open Door Icon"
+                        class="elevator-open-door-icon">
+                </button> -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
